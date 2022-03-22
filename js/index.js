@@ -12,5 +12,5 @@ headerBurger.addEventListener('click', () => {
     burgerButton.classList.toggle('active');
     // header__burger.classList.toggle('active');
     container.classList.toggle('active');
-    document.body.style.toggle.overflow = 'hidden';
+    document.body.classList.toggle('bodyFix');
 })

@@ -18,6 +18,10 @@ body {
     font-weight: 100;
 }
 
+.bodyFix {
+    overflow: hidden;
+}
+
 a {
     text-decoration: none;
     color: inherit;
