@@ -180,7 +180,8 @@ h1 {
         width: 100%;
         height: 0%;
         background: linear-gradient(180deg, hsla(272, 58%, 35%, 0.8), hsla(196, 41%, 45%, 0.8), rgba(81, 150, 255, 0.8));
-        backdrop-filter: saturate(180%) blur(5px);
+        backdrop-filter: blur(4px) contrast(60%);
+        -webkit-backdrop-filter: blur(4px) contrast(60%);
         z-index: 2;
         display: flex;
         align-items: center;
@@ -241,8 +242,9 @@ h1 {
     /* background: rgba(0, 0, 0, 0.421); */
     /* background: linear-gradient(45deg, #1f4d6b7a, #8b37acb2); */
     /* background: rgba(0, 0, 0, 0.407); */
-    background: rgba(128, 128, 128, 0.103);
-    backdrop-filter: saturate(180%) blur(5px);
+    /* background: rgba(128, 128, 128, 0.103); */
+    background: rgba(132, 29, 216, 0.185);
+    backdrop-filter: blur(2px) contrast(180%);
     border-radius: 1rem;
     display: flex;
     flex-direction: column;
@@ -303,9 +305,10 @@ h1 {
     /* background: linear-gradient(45deg, #2b5876, #4e4376); */
     /* background: linear-gradient(45deg, #306e9779, #523e9c8a); */
     /* background: rgba(0, 0, 0, 0.407); */
-    background: rgba(128, 128, 128, 0.103);
-    /* background: rgba(0, 0, 0, 0.421); */
-    backdrop-filter: saturate(180%) blur(3px);
+    /* background: rgba(128, 128, 128, 0.103); */
+    background: rgba(30, 16, 158, 0.321);
+    backdrop-filter: blur(2px) contrast(180%);
+    -webkit-backdrop-filter: blur(2px) contrast(180%);
 }
 
 .board__title {
@@ -434,6 +437,7 @@ h1 {
     .footer__icon-social {
         padding-top: 1.5rem;
         font-size: 1.7rem;
+        color: white;
     }
     .footer__title {
         font-size: 1.4rem;
