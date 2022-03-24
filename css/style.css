@@ -6,9 +6,9 @@ html {
 }
 
 /* убрать полосу прокрутки для всей страницы */
-::-webkit-scrollbar {
+/* ::-webkit-scrollbar {
     width: 0;
-}
+} */
 
 body {
     margin: 0;
@@ -45,7 +45,8 @@ h1 {
     display: flex;
     flex-direction: column;
     z-index: 1;
-    background: linear-gradient(65deg, black, hsl(224, 57%, 18%), black);
+    /* background: linear-gradient(65deg, black, hsl(224, 57%, 18%), black); */
+    background: linear-gradient(180deg, hsl(224, 57%, 18%), rgb(0, 34, 49), black);
     animation: name 0.5s ease;
 }
 
@@ -66,9 +67,10 @@ h1 {
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(45deg,hsla(191, 100%, 50%, 0.7),hsla(215, 65%, 53%, 0.7));
+    background: linear-gradient(45deg,hsla(191, 100%, 50%, 0.7),hsla(177, 65%, 30%, 0.7));
+    /* background: linear-gradient(45deg,hsla(191, 100%, 50%, 0.7),hsla(215, 65%, 53%, 0.7)); */
     /* backdrop-filter: saturate(180%) blur(5px); */
-    backdrop-filter: blur(4px) contrast(60%);
+    backdrop-filter: blur(3px) contrast(60%);
     -webkit-backdrop-filter: blur(4px) contrast(60%);
     border-radius: 0px 0px 30px 30px;
     z-index: 20;
@@ -226,6 +228,12 @@ h1 {
     text-align: center;
 }
 
+@media (max-width: 800px) {
+    .content__container {
+        margin: 5rem 0rem 1rem 0rem;
+    }
+}
+
 /* sidebar */
 .content__sidebar {
     width: 300px;
@@ -248,8 +256,9 @@ h1 {
     /* background: linear-gradient(45deg, #1f4d6b7a, #8b37acb2); */
     /* background: rgba(0, 0, 0, 0.407); */
     /* background: rgba(128, 128, 128, 0.103); */
-    background: rgba(132, 29, 216, 0.185);
-    backdrop-filter: blur(2px) contrast(180%);
+    /* background: rgba(0, 0, 0, 0.085); */
+    background: hsla(0, 0%, 40%, 0.2);
+    backdrop-filter: saturate(180%) blur(5px);
     border-radius: 1rem;
     display: flex;
     flex-direction: column;
@@ -303,16 +312,11 @@ h1 {
 /* main */
 .content__main {
     flex: 1;
-    /* box-shadow: 0px 0px 10px 2px hsl(0, 0%, 80%); */
     margin: 0rem 1rem;
     border-radius: 1rem;
     color: hsl(0, 0%, 80%);
-    /* background: linear-gradient(45deg, #2b5876, #4e4376); */
-    /* background: linear-gradient(45deg, #306e9779, #523e9c8a); */
-    /* background: rgba(0, 0, 0, 0.407); */
-    /* background: rgba(128, 128, 128, 0.103); */
-    background: rgba(30, 16, 158, 0.321);
-    backdrop-filter: blur(2px) contrast(180%);
+    background: hsla(0, 0%, 40%, 0.2);
+    backdrop-filter: saturate(180%) blur(5px);
     -webkit-backdrop-filter: blur(2px) contrast(180%);
 }
 
@@ -325,6 +329,13 @@ h1 {
     /* text-fill-color: transparent; */
     /* -webkit-background-clip: text; */
     /* background-image: linear-gradient(45deg, #ff9fe1 30%, hsl(184, 61%, 57%),rgb(183, 59, 255)); */
+}
+
+
+@media (max-width: 800px) {
+    .board__title {
+        font-size: 2.5rem;
+    }
 }
 .board__content {
     font-size: 22px;
@@ -347,12 +358,6 @@ h1 {
 }
 
 .navigation__item {
-    /* box-shadow: 0px 0px 10px 2px hsl(0, 0%, 80%); */
-    /* background: linear-gradient(to top left, powderblue, pink); */
-    /* background: linear-gradient(45deg,#f2709c,#ff9472); */
-    /* background: linear-gradient(45deg, #2b5876, #4e4376); */
-    /* background: linear-gradient(45deg, #1f4d6b7a, #8b37ac7e); */
-    /* background: rgba(0, 0, 0, 0.407); */
     background: rgba(128, 128, 128, 0.103);
     backdrop-filter: saturate(180%) blur(5px);
     border-radius: 0.3rem;
@@ -408,7 +413,10 @@ h1 {
     flex-direction: column;
     /* background: linear-gradient(45deg,#16222A,#3A6073); */
     /* background: linear-gradient(180deg, black, hsl(200, 33%, 14%)); */
-    background: black;
+    background: rgba(109, 109, 109, 0.15);
+    background: hsla(0, 0%, 40%, 0.2);
+    border-radius: 1rem;
+    margin: 0rem 1rem 1rem 1rem;
 }
 
 .footer__decor {
