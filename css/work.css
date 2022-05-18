@@ -314,6 +314,7 @@ h1 {
     flex: 1;
     margin: 0rem 1rem;
     border-radius: 1rem;
+    overflow: auto;
     color: hsl(0, 0%, 80%);
     background: hsla(0, 0%, 40%, 0.2);
     backdrop-filter: saturate(180%) blur(5px);
