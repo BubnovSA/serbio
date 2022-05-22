@@ -330,11 +330,26 @@ h1 {
     /* -webkit-background-clip: text; */
     /* background-image: linear-gradient(45deg, #ff9fe1 30%, hsl(184, 61%, 57%),rgb(183, 59, 255)); */
 }
+.board__podtitle {
+    text-align: left;
+    margin-left: 2.5rem;
+    margin-top: 2.5rem;
+    color: aqua;
+    font-weight: bold;
+    font-style: italic;
+}
 
 
 @media (max-width: 800px) {
     .board__title {
         font-size: 2.5rem;
+    }
+    .board__podtitle {
+        font-size: 1.6rem;
+        text-align: center;
+        margin: 2rem;
+        margin-top: 3rem;
+        margin-bottom: 0;
     }
 }
 .board__content {
