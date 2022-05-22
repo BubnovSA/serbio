@@ -1,1 +1,6 @@
-[serbio.ru](http://serbio.ru)
+# Статический сайт
+____
+
+Ссылка для перехода: [serbio.ru](http://serbio.ru)
+
+____
