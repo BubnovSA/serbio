@@ -63,6 +63,7 @@ h1 {
 .container__header::before {
     content: '';
     position: absolute;
+    box-shadow: 0px 0px 60px 2px black;
     top: 0;
     left: 0;
     width: 100%;
